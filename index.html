@@ -86,19 +86,29 @@
             text-decoration: underline;
         }
 
-        .cv-skills {
+        .cv-downloads {
             display: flex;
             flex-wrap: wrap;
-            gap: 0.4rem;
+            gap: 0.5rem;
+            margin-top: 0.75rem;
         }
 
-        .cv-skill {
+        .cv-download {
+            display: inline-flex;
+            align-items: center;
             padding: 0.3rem 0.6rem;
-            border-radius: 6px;
-            background: #ffffff;
             border: 1px solid var(--border);
-            color: var(--text);
+            border-radius: 6px;
+            background: var(--surface-2);
+            color: var(--accent);
+            text-decoration: none;
             font-size: 0.85rem;
+            font-weight: 600;
+        }
+
+        .cv-download:hover {
+            background: #eaeef2;
+            text-decoration: none;
         }
 
         .cv-section {
@@ -178,9 +188,14 @@
                     <span>+44 77940 78032</span>
                     <span><a href="mailto:ben@madle-jordan.co.uk">ben@madle-jordan.co.uk</a></span>
                     <span><a
-                            href="https://www.linkedin.com/in/ben-madle-jordan-06231936/">linkedin.com/in/ben-madle-jordan-06231936/</a></span>
+                            href="https://www.linkedin.com/in/ben-madle-jordan-06231936/">LinkedIn</a></span>
                     <span>Kent</span>
                 </p>
+
+                <div class="cv-downloads" aria-label="Download CV files">
+                    <a class="cv-download" href="Ben-Madle-Jordan-CV.pdf" download>Download PDF</a>
+                    <a class="cv-download" href="Ben-Madle-Jordan-CV.docx" download>Download DOCX</a>
+                </div>
 
                 <section class="cv-section cv-summary">
                     <h2>Professional Summary</h2>
@@ -189,35 +204,6 @@
                         Azure, Nutanix, Windows Server, Hyper-V, AWS, and networking. Proven ability to modernize legacy
                         platforms, automate deployments, improve reliability, and support complex infrastructure across
                         remote and secure sites.</p>
-                </section>
-                <section class="cv-section cv-summary-block">
-                    <h2>Core Skills</h2>
-                    <div class="cv-skills">
-                        <span class="cv-skill">DevOps Automation</span>
-                        <span class="cv-skill">Infrastructure as Code</span>
-                        <span class="cv-skill">Ansible</span>
-                        <span class="cv-skill">GitHub Enterprise</span>
-                        <span class="cv-skill">CI/CD Pipelines</span>
-                        <span class="cv-skill">Azure</span>
-                        <span class="cv-skill">Nutanix</span>
-                        <span class="cv-skill">AWS</span>
-                        <span class="cv-skill">Windows Server</span>
-                        <span class="cv-skill">Hyper-V</span>
-                        <span class="cv-skill">PowerShell</span>
-                        <span class="cv-skill">Hybrid Infrastructure</span>
-                        <span class="cv-skill">Server Migration</span>
-                        <span class="cv-skill">Security Hardening</span>
-                        <span class="cv-skill">Virtualization</span>
-                        <span class="cv-skill">Active Directory</span>
-                        <span class="cv-skill">SQL Server</span>
-                        <span class="cv-skill">Networking</span>
-                        <span class="cv-skill">Cisco</span>
-                        <span class="cv-skill">HPE</span>
-                        <span class="cv-skill">WAN</span>
-                        <span class="cv-skill">SD-WAN</span>
-                        <span class="cv-skill">Incident Management</span>
-                        <span class="cv-skill">Troubleshooting</span>
-                    </div>
                 </section>
 
             </main>
@@ -230,14 +216,15 @@
                 <h3>Microland Limited — Senior DevOps Engineer</h3>
                 <div class="cv-meta">Aug 2024 - Present | Kent, England, United Kingdom</div>
                 <ul>
-                    <li>Led a modernization programme using Ansible and GitHub Enterprise pipelines.</li>
-                    <li>Automated deployments across Azure Local and AWS hybrid infrastructure for critical national
+                    <li>Led a modernization programme using <strong>Ansible</strong> and <strong>GitHub Enterprise pipelines</strong>.</li>
+                    <li>Automated deployments across <strong>Azure Local</strong> and <strong>AWS</strong> hybrid infrastructure for critical national
                         infrastructure at 75+ physical sites.</li>
-                    <li>Delivered a one-touch automated migration to Windows Server 2022, improving consistency, speed,
+                    <li>Delivered a one-touch automated migration to <strong>Windows Server 2022</strong>, improving consistency, speed,
                         and repeatability.</li>
-                    <li>Applied DevOps best practices to reduce manual intervention and maintain strict security
-                        standards.</li>
-                    <li>Supported secure, reliable platform operations across infrastructure and automation delivery.
+                    <li>Developed and maintained <strong>PowerShell</strong> scripts for automation and configuration management.</li>
+                    <li>Applied <strong>DevOps</strong> best practices to reduce manual intervention and maintain strict security
+                        standards using <strong>Infrastructure as Code (IaC)</strong>.</li>
+                    <li>Supported secure, reliable <strong>platform operations</strong> across infrastructure and automation delivery.
                     </li>
                 </ul>
             </article>
@@ -246,13 +233,13 @@
                 <h3>Microland Limited — SME - Cloud and Datacentre</h3>
                 <div class="cv-meta">Jul 2023 - Sep 2024 | Kent, England, United Kingdom</div>
                 <ul>
-                    <li>Managed an aging Microsoft Hyper-V hybrid environment across multiple remote sites connected via
+                    <li>Managed an aging <strong>Microsoft Hyper-V</strong> hybrid environment across multiple remote sites connected via
                         MPLS to AWS.</li>
-                    <li>Provided full-stack operational support across build, on-call, cloud, WAN, embedded electronics,
-                        Cisco and HPE networking, and infrastructure services.</li>
-                    <li>Supported migration to SD-WAN while maintaining service continuity, security, and performance.
+                    <li>Provided full-stack operational support across build, <strong>Windows Server</strong>, cloud, WAN, embedded electronics,
+                        <strong>Cisco</strong> and <strong>HPE</strong> networking, and infrastructure services.</li>
+                    <li>Supported migration to <strong>SD-WAN</strong> while maintaining service continuity, security, and performance.
                     </li>
-                    <li>Resolved issues across infrastructure layers in a secure enterprise environment.</li>
+                    <li>Resolved issues across <strong>infrastructure layers</strong> in a secure enterprise environment.</li>
                 </ul>
             </article>
 
@@ -260,12 +247,12 @@
                 <h3>Morson Edge — Field Service Engineer</h3>
                 <div class="cv-meta">Apr 2020 - Jul 2023 | Europe</div>
                 <ul>
-                    <li>Supported the introduction and operation of Hyper-V virtualisation across the secure
+                    <li>Supported the introduction and operation of <strong>Hyper-V</strong> virtualisation across the secure
                         environment.</li>
-                    <li>Supported the transition to SD-WAN networking, improving resilience across connected sites.</li>
-                    <li>Provided technical support across server hardware, SQL, Active Directory, networking, VPNs,
+                    <li>Supported the transition to <strong>SD-WAN</strong> networking, improving resilience across connected sites.</li>
+                    <li>Provided technical support across server hardware, <strong>SQL</strong>, <strong>Active Directory</strong>, networking, <strong>VPNs</strong>,
                         printers, desktop systems, and bespoke embedded electronics.</li>
-                    <li>Troubleshot custom bus communications and specialist electronic systems in a controlled
+                    <li>Troubleshot <strong>custom bus communications</strong> and specialist electronic systems in a controlled
                         environment.</li>
                 </ul>
             </article>
@@ -274,29 +261,9 @@
                 <h3>Serco — Field Service Engineer</h3>
                 <div class="cv-meta">Jan 2015 - Mar 2020 | Europe</div>
                 <ul>
-                    <li>Provided 24/7 support for fully air-gapped systems in a high-control environment.</li>
-                    <li>Delivered end-to-end support across server hardware, virtualization, SQL, Active Directory,
-                        networking, VPNs, printers, desktop systems, and bespoke embedded electronics.</li>
-                    <li>Troubleshot custom bus communications and specialist electronic systems.</li>
-                    <li>Supported air conditioning, CCTV, cabling, and wider site infrastructure.</li>
-                </ul>
-            </article>
-
-            <article class="cv-entry">
-                <h3>EiS Kent — IT Consultant</h3>
-                <div class="cv-meta">Dec 2012 - Dec 2014 | Kent, England, United Kingdom</div>
-                <ul>
-                    <li>Supported secondary schools with endpoint, server, and network infrastructure.</li>
-                    <li>Designed and implemented secure domain architectures.</li>
-                    <li>Delivered Cisco wireless, switching, and VoIP solutions.</li>
-                </ul>
-            </article>
-
-            <article class="cv-entry">
-                <h3>Northgate Managed Services Limited — Customer Service Engineer</h3>
-                <div class="cv-meta">Aug 2011 - Dec 2012</div>
-                <ul>
-                    <li>Supported and maintained computer networks and desktop systems in a school environment.</li>
+                    <li>Provided 24/7 support for fully <strong>air-gapped systems</strong> in a high-control environment.</li>
+                    <li>Delivered end-to-end support across server hardware, <strong>virtualization</strong>, <strong>SQL</strong>, <strong>Active Directory</strong>,
+                        networking, <strong>VPNs</strong>, printers, desktop systems, and bespoke embedded electronics.</li>
                 </ul>
             </article>
         </section>

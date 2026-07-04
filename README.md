@@ -13,3 +13,26 @@ The site is intentionally simple:
 - Core skills grouped as a compact tag-style list
 - Professional experience
 - Contact details with a clickable email address and LinkedIn profile
+
+## Export To Word And PDF
+
+Use [Convert-CV.ps1](Convert-CV.ps1) to convert the HTML master page into both `.docx` and `.pdf`.
+
+### Default usage
+
+```powershell
+.\Convert-CV.ps1
+```
+
+This uses:
+
+- Source HTML: `index.html`
+- Output names: `Ben-Madle-Jordan-CV.docx` and `Ben-Madle-Jordan-CV.pdf`
+- Quick Style Set: `Black & White (Classic)`
+- Margins: `0.5` inches (narrow)
+
+### Custom usage
+
+```powershell
+.\Convert-CV.ps1 -HtmlPath index.html -OutputBaseName "Ben-Madle-Jordan-CV" -OutputDirectory .
+```
