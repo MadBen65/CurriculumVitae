@@ -200,12 +200,12 @@ try {
     }
 }
 finally {
-    if ($document -ne $null) {
+    if ($null -ne $document) {
         $document.Close()
         [System.Runtime.InteropServices.Marshal]::ReleaseComObject($document) | Out-Null
     }
 
-    if ($word -ne $null) {
+    if ($null -ne $word) {
         $word.Quit()
         [System.Runtime.InteropServices.Marshal]::ReleaseComObject($word) | Out-Null
     }
