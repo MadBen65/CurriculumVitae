@@ -2,6 +2,8 @@
 
 This repository contains my personal CV as a static GitHub Pages site.
 
+GitHub profile: [MadBen65](https://github.com/MadBen65/)
+
 The site is intentionally simple:
 
 - [index.html](index.html) is the homepage and contains the full CV layout and content.
