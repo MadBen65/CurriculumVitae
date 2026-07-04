@@ -44,10 +44,7 @@
         }
 
         .cv-hero {
-            display: grid;
-            grid-template-columns: minmax(0, 1.4fr) minmax(280px, 0.8fr);
-            gap: 1.5rem;
-            align-items: start;
+            display: block;
             padding: 1.25rem;
             border: 1px solid var(--border);
             border-radius: 6px;
@@ -87,22 +84,6 @@
 
         .cv-contact a:hover {
             text-decoration: underline;
-        }
-
-        .cv-sidebar {
-            padding: 1rem;
-            border: 1px solid var(--border);
-            border-radius: 6px;
-            background: var(--surface-2);
-            color: var(--text);
-        }
-
-        .eyebrow {
-            margin: 0 0 0.85rem;
-            font-size: 0.8rem;
-            text-transform: uppercase;
-            letter-spacing: 0.16em;
-            color: var(--muted);
         }
 
         .cv-skills {
@@ -180,7 +161,6 @@
             }
 
             .cv-hero {
-                grid-template-columns: 1fr;
                 padding: 0.95rem;
             }
         }
